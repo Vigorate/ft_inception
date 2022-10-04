@@ -59,13 +59,13 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/Users/amine/data/wordpress'
+      device: '/home/parallels/data/wordpress'
   mariadb:
     driver: local
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/Users/amine/data/mariadb'
+      device: '/home/parallels/data/mariadb'
 
 
 

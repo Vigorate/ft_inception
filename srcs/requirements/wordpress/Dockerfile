@@ -2,7 +2,7 @@
 FROM		debian:buster
 
 #			Installing required packages
-RUN			apt update -y && apt upgrade -y
+RUN			apt-get update -y && apt-get upgrade -y
 RUN			apt-get install wget -y
 #			Install PHP
 RUN			apt-get install php7.3 -y
@@ -19,6 +19,6 @@ RUN			chmod +x wp-cli.phar
 RUN			mv wp-cli.phar /usr/local/bin/wp
 
 COPY		./conf/php.conf /etc/php/7.3/fpm/pool.d/www.conf
-COPY		conf/conf.sh /
+COPY		conf/conf.sh conf.sh
 
 ENTRYPOINT	["bash", "conf.sh"]
