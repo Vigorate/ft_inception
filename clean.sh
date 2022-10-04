@@ -7,4 +7,3 @@ docker volume rm $(docker volume ls -q)
 docker network rm $(docker network ls -q) 2>/dev/null
 sudo rm -rf ~/data/wordpress/*
 sudo rm -rf ~/data/mariadb/*
-echo "Doneqwd!"
