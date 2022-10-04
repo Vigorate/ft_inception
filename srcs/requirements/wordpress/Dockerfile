@@ -8,6 +8,7 @@ RUN			apt-get install wget -y
 RUN			apt-get install php7.3 -y
 RUN			apt-get install php-fpm -y
 RUN			apt-get install php-mysql -y
+RUN			apt-get install mariadb-client -y
 #			Install Wordpress and sets its rights
 RUN			wget https://wordpress.org/wordpress-6.0.tar.gz -P /var/www
 RUN			cd /var/www && tar -xzf wordpress-6.0.tar.gz
